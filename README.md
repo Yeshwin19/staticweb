@@ -1,1 +1,1 @@
-# staticweb
+﻿#Python Web Generator
