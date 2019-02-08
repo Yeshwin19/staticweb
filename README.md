@@ -37,7 +37,7 @@ __NOTE: IF YOU DO NOT HAVE THE MODULES MENTIONNED ABOVE MAKE SURE YOU DOWNLOAD I
 4) Let's give our program a good look while it will execute and also try to guide our users what they will have to do once the conversion tool is launched. Let's do this with some `PRINT`.
 
 - print('----------Welcome to the Markdown-HTML convertor----------')
-- print('***********************************')
+- print('----------------------------------------------------------')
 - print('1 - Conversion Tool') [this is a choice that the user needs to do. We must make sure that when he/she presses `1` the conversion tool should be lauched.]
 - print('2 - Install other packages (make use of <PIP>)') [this is a choice that the user needs to do. We must make sure that when he/she presses 2, the necessary packages are installed.]
 - print('Press 1 to use the conversion tool freely')
