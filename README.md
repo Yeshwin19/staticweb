@@ -1,4 +1,4 @@
-﻿#Welcome to the free Markdown-HTML convertor.
+﻿# Welcome to the free Markdown-HTML convertor.
  
  This little convertor, will help you to convert all your markdown written files into pure HTML and will generate a website where you can see the final result.(Your file written in markdown)
  
@@ -9,16 +9,16 @@
  
  **You can get both of them using the (PIP) command or you can just download it in your Pycharm or Visual Studio Code.**
  
- ##What does the markdown package do?
+ ## What does the markdown package do?
  The markdown package is a great package for converting each and every single document written in markdown zhich will be later generated as HTML.
  
- ##What does the pygment package do?
+ ## What does the pygment package do?
  The pygment package will allow you to insert some CSS into your final markdown file which will then be generated as HTML and it also use for syntax highlighting
  
  You can create your markdown file online for free *[here](https://stackedit.io)*
  Once you have created your markdown file you just have to download it and it is ready to be used.
  
- ##Let's dig deep into the coding part and algorithm now.
+ ## Let's dig deep into the coding part and algorithm now.
  Now that you already have Markdown and Pygments installed, we are ready to go.
  
 **Let's do this step by step.**
