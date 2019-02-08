@@ -15,7 +15,8 @@
  ## What does the pygment package do?
  The pygment package will allow you to insert some CSS into your final markdown file which will then be generated as HTML and it also use for syntax highlighting
  
- You can create your markdown file online for free *[here](https://stackedit.io)*
+ You can create your markdown file online for free *[here](https://stackedit.io).*
+ 
  Once you have created your markdown file you just have to download it and it is ready to be used.
  
  ## Let's dig deep into the coding part and algorithm now.
