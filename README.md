@@ -17,11 +17,11 @@
  
 ## Que fait le package pygment?
 
- Le package pygment vous permettra d’insérer du code CSS dans votre fichier de démarquage final qui sera ensuite généré au format HTML et utilisera également pour la coloration syntaxique.
+ Le package pygment vous permettra d’insérer du code CSS dans votre fichier de Markdown final qui sera ensuite généré au format HTML et utilisera également pour la coloration syntaxique.
  
- Vous pouvez créer votre fichier de démarquage en ligne gratuitement **[ici](https://stackedit.io).**
+ Vous pouvez créer votre fichier de Markdown en ligne gratuitement **[ici](https://stackedit.io).**
  
- Une fois que vous avez créé votre fichier de démarquage, il vous suffit de le télécharger et il est prêt à être utilisé.
+ Une fois que vous avez créé votre fichier de Markdown, il vous suffit de le télécharger et il est prêt à être utilisé.
  
 ## Explorons maintenant la partie codage et l'algorithme.
 
