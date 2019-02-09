@@ -24,22 +24,21 @@
  Une fois que vous avez créé votre fichier de démarquage, il vous suffit de le télécharger et il est prêt à être utilisé.
  
 ## Explorons maintenant la partie codage et l'algorithme.
----
 
  Maintenant que vous avez déjà installé Markdown et Pygments, nous sommes prêts à commencer.
  
 **Faisons cela étape par étape.**
 
-1) Import markdown.
+1) ``Import markdown``
 
 - Nous devons importer markdown car Python-Markdown fournit une API permettant aux tiers d'écrire des extensions dans l'analyseur en ajoutant leurs propres ajouts ou modifications à la syntaxe. ... Les chaînes ne doivent être utilisées que lorsqu'il est impossible d'importer directement la classe d'extension (à partir de la ligne de commande ou dans un modèle).
 
 
-2) Import OS.
+2) ``Import OS``
 
 - Le module OS en Python permet d’utiliser les fonctionnalités dépendantes du système d’exploitation. Les fonctions fournies par le module de système d’exploitation vous permettent d’interfacer avec le système d’exploitation sous-jacent sur lequel Python s’exécute - que ce soit Windows, Mac ou Linux.
 
-3) Import subprocess.
+3) ``Import subprocess``
 
 - Le module de sous-processus vous permet de générer de nouveaux processus, de vous connecter à leurs canaux d'entrée / sortie / d'erreur et d'obtenir leurs codes de retour. Ce module vise à remplacer plusieurs modules et fonctions plus anciens. La méthode est définie comme suit: subprocess.check_output (args, *, stdin = None, stderr = None, shell = False, universal_newlines = False) # Exécute une commande avec des arguments et renvoie sa sortie sous forme d'octet. ** Exemple d'utilisation: #! / Usr / bin / env sous-processus d'importation python s = sous-processus. **
 
@@ -78,21 +77,21 @@ __NOTE: la commande * python -m markdown * est utilisée pour convertir le fichi
     
 - elif choice == 3:
 
-  **print("--Pour utiliser l'outil de conversion, relancez le programme en appuyant sur la touche F5..")**
+  print("--Pour utiliser l'outil de conversion, relancez le programme en appuyant sur la touche F5..")
   
-  **print("--Une fois le programme lancé, appuyez sur 1 pour commencer à utiliser l'outil de conversion..")**
+    print("--Une fois le programme lancé, appuyez sur 1 pour commencer à utiliser l'outil de conversion..")
   
-  **print("--Insérez le fichier Markdown à convertir en HTML.")**
+    print("--Insérez le fichier Markdown à convertir en HTML.")
   
-  **print("--Vous pouvez cliquer sur le fichier index.html généré et situé sur votre bureau.")**
+    print("--Vous pouvez cliquer sur le fichier index.html généré et situé sur votre bureau.")
   
-  **print("--Pour télécharger le package Markdown, appuyez sur 2 lorsque le programme est exécuté.")**
+    print("--Pour télécharger le package Markdown, appuyez sur 2 lorsque le programme est exécuté.")
   
-  **print("--Votre téléchargement va démarrer automatiquement.")**
+    print("--Votre téléchargement va démarrer automatiquement.")
   
-  **print("--Pour obtenir de l'aide, appuyez sur 3 pendant l'exécution du programme.")**
+    print("--Pour obtenir de l'aide, appuyez sur 3 pendant l'exécution du programme.")
   
-  **print("--Appuyez à nouveau sur F5 pour relancer le programme dans l'ordre.")**
+    print("--Appuyez à nouveau sur F5 pour relancer le programme dans l'ordre.")
     
 6) Et c'est la dernière étape.
 
