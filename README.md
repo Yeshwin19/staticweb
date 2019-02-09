@@ -12,9 +12,11 @@
  
 
 ## Que fait le package markdown?
+
  Le package markdown est un excellent paquet pour convertir chaque document écrit en markdown qui sera ensuite généré au format HTML.
  
 ## Que fait le package pygment?
+
  Le package pygment vous permettra d’insérer du code CSS dans votre fichier de démarquage final qui sera ensuite généré au format HTML et utilisera également pour la coloration syntaxique.
  
  Vous pouvez créer votre fichier de démarquage en ligne gratuitement **[ici](https://stackedit.io).**
@@ -22,6 +24,8 @@
  Une fois que vous avez créé votre fichier de démarquage, il vous suffit de le télécharger et il est prêt à être utilisé.
  
 ## Explorons maintenant la partie codage et l'algorithme.
+---
+
  Maintenant que vous avez déjà installé Markdown et Pygments, nous sommes prêts à commencer.
  
 **Faisons cela étape par étape.**
@@ -57,25 +61,37 @@ __REMARQUE: SI VOUS N'AVEZ PAS LES MODULES MENTIONNÉS CI-DESSUS, ASSUREZ-VOUS D
 5) Appelons maintenant la boucle selon que l’utilisateur appuie sur le 1 ou le 2.
 
 - if choice == 1:
+
     fichier = input ("Merci de bien vouloir insérer le fichier de démarquage à convertir (markdown.md):")
+    
     os.system ("python -m markdown -x codehilite" + file_to_be_converted + "> index.html")
+    
 __NOTE: la commande * python -m markdown * est utilisée pour convertir le fichier de démarquage en html et si vous souhaitez que le CSS soit appliqué, vous devez utiliser la commande complète * python -m markdown -x codehilite + "file_to_be_converted +"> index.html *. Rappelez-vous que le signe '+' est utilisé pour la concaténation de chaînes .__
 
 *Maintenant, si l'utilisateur choisit 1 et que le choix est exactement égal à 1, il pourra utiliser l'outil Markdwon-HTML.*
 
 - elif choice == 2:
+
     os.system("pip install markdown")
     
 *Maintenant, si l'utilisateur appuie sur 2 et que le choix est exactement égal à 2, le Markdown package commencera automatiquement à télécharger.*
     
 - elif choice == 3:
+
   **print("--Pour utiliser l'outil de conversion, relancez le programme en appuyant sur la touche F5..")**
+  
   **print("--Une fois le programme lancé, appuyez sur 1 pour commencer à utiliser l'outil de conversion..")**
+  
   **print("--Insérez le fichier Markdown à convertir en HTML.")**
+  
   **print("--Vous pouvez cliquer sur le fichier index.html généré et situé sur votre bureau.")**
+  
   **print("--Pour télécharger le package Markdown, appuyez sur 2 lorsque le programme est exécuté.")**
+  
   **print("--Votre téléchargement va démarrer automatiquement.")**
+  
   **print("--Pour obtenir de l'aide, appuyez sur 3 pendant l'exécution du programme.")**
+  
   **print("--Appuyez à nouveau sur F5 pour relancer le programme dans l'ordre.")**
     
 6) Et c'est la dernière étape.
