@@ -46,7 +46,7 @@ __REMARQUE: SI VOUS N'AVEZ PAS LES MODULES MENTIONNÉS CI-DESSUS, ASSUREZ-VOUS D
 
 4) Examinons attentivement notre programme pendant son exécution et essayons également de guider nos utilisateurs sur ce qu’ils devront faire une fois l’outil de conversion lancé. Faisons cela avec un peu de `PRINT`.
 
-
+```
 - print ('---------- Bienvenue dans le convertisseur Markdown-HTML ----------')
 - print ('---------------------------------------------- ------------ ')
 - print ('1 - Outil de conversion') [l'utilisateur doit faire son choix. Nous devons nous assurer que lorsqu’il appuiera sur «1», l’outil de conversion sera lancé.]
@@ -56,25 +56,25 @@ __REMARQUE: SI VOUS N'AVEZ PAS LES MODULES MENTIONNÉS CI-DESSUS, ASSUREZ-VOUS D
 - print ('Appuyez sur 2 si vous souhaitez télécharger d'autres packages.')
 - print ('Appuyez sur 3 si vous voulez obtenir de l'aide')
 - choice = int (input ()) [c’est la commande qui tiendra compte des choix de l’utilisateur]
-  
-5) Appelons maintenant la boucle selon que l’utilisateur appuie sur le 1 ou le 2.
-
+```  
+5) Appelons maintenant la boucle dependant sur la touche dur laquelle l'utilisateur appuiera.
+```
 - if choice == 1:
 
     fichier = input ("Merci de bien vouloir insérer le fichier de démarquage à convertir (markdown.md):")
     
     os.system ("python -m markdown -x codehilite" + file_to_be_converted + "> index.html")
-    
+```    
 __NOTE: la commande * python -m markdown * est utilisée pour convertir le fichier de démarquage en html et si vous souhaitez que le CSS soit appliqué, vous devez utiliser la commande complète * python -m markdown -x codehilite + "file_to_be_converted +"> index.html *. Rappelez-vous que le signe '+' est utilisé pour la concaténation de chaînes .__
 
 *Maintenant, si l'utilisateur choisit 1 et que le choix est exactement égal à 1, il pourra utiliser l'outil Markdwon-HTML.*
-
+```
 - elif choice == 2:
 
     os.system("pip install markdown")
-    
+```    
 *Maintenant, si l'utilisateur appuie sur 2 et que le choix est exactement égal à 2, le Markdown package commencera automatiquement à télécharger.*
-    
+```    
 - elif choice == 3:
 
   print("--Pour utiliser l'outil de conversion, relancez le programme en appuyant sur la touche F5..")
@@ -92,12 +92,12 @@ __NOTE: la commande * python -m markdown * est utilisée pour convertir le fichi
     print("--Pour obtenir de l'aide, appuyez sur 3 pendant l'exécution du programme.")
   
     print("--Appuyez à nouveau sur F5 pour relancer le programme dans l'ordre.")
-    
+```    
 6) Et c'est la dernière étape.
 
 - Exécutez le programme à l'aide de la touche F5 si vous utilisez le code Visual Studio. Le fichier index.html sera généré sur votre bureau. Assurez-vous de l'ouvrir et savourez le succès de votre travail acharné.
 
-**Ça y est, vous êtes prêt à utiliser votre gratuit _Markdown-HTML Convertor _**
+**Ça y est, vous êtes prêt à utiliser votre convertisseur gratuit _Markdown-HTML Convertor_**
     
 
 
