@@ -47,19 +47,19 @@ __REMARQUE: SI VOUS N'AVEZ PAS LES MODULES MENTIONNÉS CI-DESSUS, ASSUREZ-VOUS D
 4) Examinons attentivement notre programme pendant son exécution et essayons également de guider nos utilisateurs sur ce qu’ils devront faire une fois l’outil de conversion lancé. Faisons cela avec un peu de `PRINT`.
 
 ```
-- print ('---------- Bienvenue dans le convertisseur Markdown-HTML ----------')
-- print ('---------------------------------------------- ------------ ')
-- print ('1 - Outil de conversion') [l'utilisateur doit faire son choix. Nous devons nous assurer que lorsqu’il appuiera sur «1», l’outil de conversion sera lancé.]
-- print ('2 - Installer d'autres packages (utiliser <PIP>)' '] [l'utilisateur doit faire ce choix. Nous devons nous assurer que quand il / elle appuie sur 2, les packages nécessaires sont installés.]
-- print ('3 - help') [l'utilisateur doit choisir s'il souhaite obtenir de l'aide s'il a des difficultés à utiliser l'outil de conversion]
-- print ('Appuyez sur 1 pour utiliser l'outil de conversion librement')
-- print ('Appuyez sur 2 si vous souhaitez télécharger d'autres packages.')
-- print ('Appuyez sur 3 si vous voulez obtenir de l'aide')
-- choice = int (input ()) [c’est la commande qui tiendra compte des choix de l’utilisateur]
+ print ('---------- Bienvenue dans le convertisseur Markdown-HTML ----------')
+ print ('---------------------------------------------- ------------ ')
+ print ('1 - Outil de conversion') [l'utilisateur doit faire son choix. Nous devons nous assurer que lorsqu’il appuiera sur «1», l’outil de conversion sera lancé.]
+ print ('2 - Installer d'autres packages (utiliser <PIP>)' '] [l'utilisateur doit faire ce choix. Nous devons nous assurer que quand il / elle appuie sur 2, les packages nécessaires sont installés.]
+ print ('3 - help') [l'utilisateur doit choisir s'il souhaite obtenir de l'aide s'il a des difficultés à utiliser l'outil de conversion]
+ print ('Appuyez sur 1 pour utiliser l'outil de conversion librement')
+ print ('Appuyez sur 2 si vous souhaitez télécharger d'autres packages.')
+ print ('Appuyez sur 3 si vous voulez obtenir de l'aide')
+ choice = int (input ()) [c’est la commande qui tiendra compte des choix de l’utilisateur]
 ```  
 5) Appelons maintenant la boucle dependant sur la touche dur laquelle l'utilisateur appuiera.
 ```
-- if choice == 1:
+ if choice == 1:
 
     fichier = input ("Merci de bien vouloir insérer le fichier de démarquage à convertir (markdown.md):")
     
@@ -69,13 +69,13 @@ __NOTE: la commande * python -m markdown * est utilisée pour convertir le fichi
 
 *Maintenant, si l'utilisateur choisit 1 et que le choix est exactement égal à 1, il pourra utiliser l'outil Markdwon-HTML.*
 ```
-- elif choice == 2:
+ elif choice == 2:
 
     os.system("pip install markdown")
 ```    
 *Maintenant, si l'utilisateur appuie sur 2 et que le choix est exactement égal à 2, le Markdown package commencera automatiquement à télécharger.*
 ```    
-- elif choice == 3:
+ elif choice == 3:
 
   print("--Pour utiliser l'outil de conversion, relancez le programme en appuyant sur la touche F5..")
   
