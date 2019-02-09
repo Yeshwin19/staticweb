@@ -77,7 +77,7 @@ __NOTE: la commande * python -m markdown * est utilisée pour convertir le fichi
 ```    
  elif choice == 3:
 
-  print("--Pour utiliser l'outil de conversion, relancez le programme en appuyant sur la touche F5..")
+    print("--Pour utiliser l'outil de conversion, relancez le programme en appuyant sur la touche F5..")
   
     print("--Une fois le programme lancé, appuyez sur 1 pour commencer à utiliser l'outil de conversion..")
   
