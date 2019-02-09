@@ -1,69 +1,88 @@
-﻿# Welcome to the free Markdown-HTML convertor.
+﻿
+# Bienvenue dans le convertisseur gratuit Markdown-HTML.
  
- This little convertor, will help you to convert all your markdown written files into pure HTML and will generate a website where you can see the final result.(Your file written in markdown)
+ Ce petit convertisseur vous aidera à convertir tous vos fichiers écrits avec démarquage en HTML pur et générera un site Web sur lequel vous pourrez voir le résultat final. (Votre fichier écrit en balises).
  
- Anyone can simply build a simple convertor like I did.
- First of all you need to download 2 packages from the Python Community in order to start creating your Markdown-HTML conversion tool:
- - Install Markdown
- - Install Pygments.
+ Tout le monde peut simplement construire un convertisseur simple comme je l’ai fait.
+ Tout d’abord, vous devez télécharger 2 packages de la communauté Python pour pouvoir créer votre outil de conversion Markdown-HTML:
+ - Installer Markdown
+ - Installez Pygments.
  
- **You can get both of them using the (PIP) command or you can just download it in your Pycharm or Visual Studio Code.**
+ **Vous pouvez obtenir les deux en utilisant la commande (PIP) ou vous pouvez simplement le télécharger dans votre code Pycharm ou Visual Studio.**
  
- ## What does the markdown package do?
- The markdown package is a great package for converting each and every single document written in markdown zhich will be later generated as HTML.
+
+## Que fait le package markdown?
+ Le package markdown est un excellent paquet pour convertir chaque document écrit en markdown qui sera ensuite généré au format HTML.
  
- ## What does the pygment package do?
- The pygment package will allow you to insert some CSS into your final markdown file which will then be generated as HTML and it also use for syntax highlighting
+## Que fait le package pygment?
+ Le package pygment vous permettra d’insérer du code CSS dans votre fichier de démarquage final qui sera ensuite généré au format HTML et utilisera également pour la coloration syntaxique.
  
- You can create your markdown file online for free *[here](https://stackedit.io).*
+ Vous pouvez créer votre fichier de démarquage en ligne gratuitement **[ici](https://stackedit.io).**
  
- Once you have created your markdown file you just have to download it and it is ready to be used.
+ Une fois que vous avez créé votre fichier de démarquage, il vous suffit de le télécharger et il est prêt à être utilisé.
  
- ## Let's dig deep into the coding part and algorithm now.
- Now that you already have Markdown and Pygments installed, we are ready to go.
+## Explorons maintenant la partie codage et l'algorithme.
+ Maintenant que vous avez déjà installé Markdown et Pygments, nous sommes prêts à commencer.
  
-**Let's do this step by step.**
+**Faisons cela étape par étape.**
 
 1) Import markdown.
-- We need to import markdown because Python-Markdown provides an API for third parties to write extensions to the parser adding their own additions or changes to the syntax. ... Strings should only be used when it is impossible to import the Extension Class directly (from the command line or in a template).
+
+- Nous devons importer markdown car Python-Markdown fournit une API permettant aux tiers d'écrire des extensions dans l'analyseur en ajoutant leurs propres ajouts ou modifications à la syntaxe. ... Les chaînes ne doivent être utilisées que lorsqu'il est impossible d'importer directement la classe d'extension (à partir de la ligne de commande ou dans un modèle).
+
 
 2) Import OS.
-- The OS module in Python provides a way of using operating system dependent functionality. The functions that the OS module provides allows you to interface with the underlying operating system that Python is running on – be that Windows, Mac or Linux.
+
+- Le module OS en Python permet d’utiliser les fonctionnalités dépendantes du système d’exploitation. Les fonctions fournies par le module de système d’exploitation vous permettent d’interfacer avec le système d’exploitation sous-jacent sur lequel Python s’exécute - que ce soit Windows, Mac ou Linux.
 
 3) Import subprocess.
-- The subprocess module allows you to spawn new processes, connect to their input/output/error pipes, and obtain their return codes. This module intends to replace several older modules and functions. The method is defined as: subprocess.check_output(args, *, stdin=None, stderr=None, shell=False, universal_newlines=False) # Run command with arguments and return its output as a byte string. **Example usage: #!/usr/bin/env python import subprocess s = subprocess.**
 
-__NOTE: IF YOU DO NOT HAVE THE MODULES MENTIONNED ABOVE MAKE SURE YOU DOWNLOAD IT ON YOUR PYCHARM OR VISUAL STUDIO CODE AND THEN CONTINUE TO FOLLOW THE STEPS__
+- Le module de sous-processus vous permet de générer de nouveaux processus, de vous connecter à leurs canaux d'entrée / sortie / d'erreur et d'obtenir leurs codes de retour. Ce module vise à remplacer plusieurs modules et fonctions plus anciens. La méthode est définie comme suit: subprocess.check_output (args, *, stdin = None, stderr = None, shell = False, universal_newlines = False) # Exécute une commande avec des arguments et renvoie sa sortie sous forme d'octet. ** Exemple d'utilisation: #! / Usr / bin / env sous-processus d'importation python s = sous-processus. **
 
-4) Let's give our program a good look while it will execute and also try to guide our users what they will have to do once the conversion tool is launched. Let's do this with some `PRINT`.
+__REMARQUE: SI VOUS N'AVEZ PAS LES MODULES MENTIONNÉS CI-DESSUS, ASSUREZ-VOUS DE LE TÉLÉCHARGER SUR VOTRE CODE PYCHARM OU VISUAL STUDIO ET CONTINUEZ À SUIVRE LES ÉTAPES___.
 
-- print('----------Welcome to the Markdown-HTML convertor----------')
-- print('----------------------------------------------------------')
-- print('1 - Conversion Tool') [this is a choice that the user needs to do. We must make sure that when he/she presses `1` the conversion tool should be lauched.]
-- print('2 - Install other packages (make use of <PIP>)') [this is a choice that the user needs to do. We must make sure that when he/she presses 2, the necessary packages are installed.]
-- print('Press 1 to use the conversion tool freely')
-- print('Press 2 if you want to download other packages.')
-- choice = int(input()) [this is the command that will take into consideration the choices made by the user]
+4) Examinons attentivement notre programme pendant son exécution et essayons également de guider nos utilisateurs sur ce qu’ils devront faire une fois l’outil de conversion lancé. Faisons cela avec un peu de `PRINT`.
+
+
+- print ('---------- Bienvenue dans le convertisseur Markdown-HTML ----------')
+- print ('---------------------------------------------- ------------ ')
+- print ('1 - Outil de conversion') [l'utilisateur doit faire son choix. Nous devons nous assurer que lorsqu’il appuiera sur «1», l’outil de conversion sera lancé.]
+- print ('2 - Installer d'autres packages (utiliser <PIP>)' '] [l'utilisateur doit faire ce choix. Nous devons nous assurer que quand il / elle appuie sur 2, les packages nécessaires sont installés.]
+- print ('3 - help') [l'utilisateur doit choisir s'il souhaite obtenir de l'aide s'il a des difficultés à utiliser l'outil de conversion]
+- print ('Appuyez sur 1 pour utiliser l'outil de conversion librement')
+- print ('Appuyez sur 2 si vous souhaitez télécharger d'autres packages.')
+- print ('Appuyez sur 3 si vous voulez obtenir de l'aide')
+- choice = int (input ()) [c’est la commande qui tiendra compte des choix de l’utilisateur]
   
-5) Now let's call the loop depending on whether the user presser the 1 or 2.
+5) Appelons maintenant la boucle selon que l’utilisateur appuie sur le 1 ou le 2.
 
 - if choice == 1:
-    fichier = input("Please kindly insert the markdown file to be converted (markdown.md) : ")
-    os.system("python -m markdown -x codehilite " + file_to_be_converted + " > index.html")
-    __NOTE: the command *python -m markdown* is used to convert the markdown file into html and if you want the CSS to be applied then you need to use the full command *python -m markdown -x codehilite + "file_to_be_converted +" > index.html*. Remember that the '+' sign is used for concatenation of strings.__
-    *Now if the user chooses 1 and the choice is exactly equal to 1 then the user will be able to use the Markdwon-HTML tool.*
-    
+    fichier = input ("Merci de bien vouloir insérer le fichier de démarquage à convertir (markdown.md):")
+    os.system ("python -m markdown -x codehilite" + file_to_be_converted + "> index.html")
+__NOTE: la commande * python -m markdown * est utilisée pour convertir le fichier de démarquage en html et si vous souhaitez que le CSS soit appliqué, vous devez utiliser la commande complète * python -m markdown -x codehilite + "file_to_be_converted +"> index.html *. Rappelez-vous que le signe '+' est utilisé pour la concaténation de chaînes .__
+
+*Maintenant, si l'utilisateur choisit 1 et que le choix est exactement égal à 1, il pourra utiliser l'outil Markdwon-HTML.*
+
 - elif choice == 2:
     os.system("pip install markdown")
     
-    *Now if the user presses 2 and the choice is exactly equal to 2 then the markdown package will automatically start to download.*
+*Maintenant, si l'utilisateur appuie sur 2 et que le choix est exactement égal à 2, le Markdown package commencera automatiquement à télécharger.*
     
-6) And that's the final step.
-
-- Run the program using the F5 key if you are using Visual Studio Code. The index.html file will be generated in your Desktop. Make sure to open it and savour the success of your hardwork.
-
-**That's it, you are ready to use your free _Markdown-HTML Convertor_**
+- elif choice == 3:
+  **print("--Pour utiliser l'outil de conversion, relancez le programme en appuyant sur la touche F5..")**
+  **print("--Une fois le programme lancé, appuyez sur 1 pour commencer à utiliser l'outil de conversion..")**
+  **print("--Insérez le fichier Markdown à convertir en HTML.")**
+  **print("--Vous pouvez cliquer sur le fichier index.html généré et situé sur votre bureau.")**
+  **print("--Pour télécharger le package Markdown, appuyez sur 2 lorsque le programme est exécuté.")**
+  **print("--Votre téléchargement va démarrer automatiquement.")**
+  **print("--Pour obtenir de l'aide, appuyez sur 3 pendant l'exécution du programme.")**
+  **print("--Appuyez à nouveau sur F5 pour relancer le programme dans l'ordre.")**
     
+6) Et c'est la dernière étape.
+
+- Exécutez le programme à l'aide de la touche F5 si vous utilisez le code Visual Studio. Le fichier index.html sera généré sur votre bureau. Assurez-vous de l'ouvrir et savourez le succès de votre travail acharné.
+
+**Ça y est, vous êtes prêt à utiliser votre gratuit _Markdown-HTML Convertor _**
     
 
 
