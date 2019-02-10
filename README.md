@@ -97,6 +97,7 @@ __NOTE: la commande * python -m markdown * est utilisée pour convertir le fichi
 
 - Exécutez le programme à l'aide de la touche F5 si vous utilisez le code Visual Studio. Le fichier index.html sera généré sur votre bureau. Assurez-vous de l'ouvrir et savourez le succès de votre travail acharné.
 
+__NOTE: N'oubliez pas de telecharger votre fichier Markdown et votre codehilite et le placer sur votre Bureau avant d'utiliser l'outil de conversion.__
 **Ça y est, vous êtes prêt à utiliser votre convertisseur gratuit _Markdown-HTML Convertor_**
     
 
